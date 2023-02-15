@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css"> 
+</head>
+<body>
+    <div class="container">
+    <h1>З клавіатури вводиться номер дня тижня.
+         Вивести на екран назву дня.
+    </h1>
+    <a href="./index.html">Повернутись до задач</a>
+     <script>
+       let numberOfDay = parseFloat(prompt('Введить номер дня тижня', '')) 
+    const MAX_DAY_IN_WEEK =7
+    const MIN_DAY_IN_WEEK =1
+    numberOfDay = Math.ceil(((numberOfDay -MIN_DAY_IN_WEEK ) % MAX_DAY_IN_WEEK) + 1)
+    let nameOfDay ='Неділя'
+    switch (numberOfDay) {
+    case 1:
+    nameOfDay = 'Понеділок'
+      break
+    case 2:
+    nameOfDay = 'Вівторок'
+      break
+    case 3:
+    nameOfDay= 'Середа'
+      break
+    case 4:
+    nameOfDay= 'Четвер'
+      break
+    case 5:
+    nameOfDay= 'П’ятниця'
+      break
+    case 6:
+    nameOfDay= 'Субота'
+      break
+  }
+      alert (`${nameOfDay}`)    
+        </script>
+       
+</body>
+</html>

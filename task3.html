@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="container">
+    <h1>Випадковим чином генерується число від 1 до 5. 
+        Спробуйте вгадати число за 2 спроби.
+    </h1>
+    <a href="./index.html">Повернутись до задач</a>
+      <script>
+      const minNumber=1
+      const maxNumber=5
+      let randomNamber = minNumber + Math.floor(Math.random()*(maxNumber-minNumber+1))
+      console.log( `${randomNamber}`);
+      let firstTry = parseFloat(prompt('Перша спроба','Введить число'))
+     if (firstTry===randomNamber)
+     alert('Ви вгадали!')
+else{ 
+    alert('У вас є ще одна спроба!')
+    let secondTry = parseFloat(prompt('Друга спроба','Введить число'))
+
+   
+        if( secondTry===randomNamber){
+            alert('Ви вгадали!')}
+            else{   
+                alert('Нажаль ви не вгадали!')
+            }
+}
+    </script>
+ </body>
+</html>

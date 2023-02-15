@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="container">
+    <h1>З клавіатури вводиться вік людини.
+         Вивести на екран ким він є (дитиною у садочку,
+         школярем, студентом, працівником, пенсіонером).
+    </h1>
+    <a href="./index.html">Повернутись до задач</a>
+            <script>
+             let ageOfPerson = parseFloat(prompt('Введіть вік','років'))
+      const ageOfkid = 1
+      const ageOfSchoolKid = 6
+      const ageOfStudent = 16
+      const ageOfWorker = 21
+      const ageOfRetiredPerson = 65
+
+      if (ageOfPerson <= ageOfkid)
+      alert('Це немовля!')
+     else if (ageOfPerson <= ageOfSchoolKid){
+        alert('Це дитина, що відвідує садочок!')
+        
+      }
+      else if ( ageOfPerson <=ageOfStudent){
+        alert('Це дитина, що навчається у школі!')
+      }
+      else if (ageOfPerson <= ageOfWorker ){
+        alert('Це студент!')
+      }
+      else if (ageOfPerson <= ageOfRetiredPerson ){
+        alert('Це працівник!')
+
+      }
+      else{
+        alert('Це пенсіонер!')
+      }
+        </script>
+      
+</body>
+</html>
